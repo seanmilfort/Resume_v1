@@ -36,9 +36,11 @@ img {
   width: 300px;
   align-content: center;
 }
+
 /* a {
     color: #58A4B0;
 } */
+
 a:hover {
   text-decoration: none;
 }
@@ -163,6 +165,12 @@ h3 {
 .work-experience a {
   color: white;
   text-decoration: none;
+}
+
+.work-experience .job-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Skills
