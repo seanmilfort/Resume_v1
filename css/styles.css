@@ -248,6 +248,14 @@ footer h2 {
 }
 
 @media screen and (max-width: 699px) {
+  header {
+    text-align: center;
+  }
+
+  .about-me {
+    text-align: center;
+  }
+
   h1 {
     font-size: 75px;
     line-height: 1;
