@@ -14,6 +14,13 @@ https://coolors.co/2b2d42-8d99ae-edf2f4-ef233c-d90429
 #EF233C - Permanent Red
 #D90429 - Crimson Red
 
+https://coolors.co/palette/333333-2b2d42-8d99ae-edf2f4-ef233c-d90429 ***USING THIS ONE***
+#333333 - Jet
+#2B2D42 - Space Gadet
+#8D99AE - Manatee
+#EDF2F4 - Alice Blue
+#EF233C - Imperial Red
+
 /* Global styles
 ----------------------------------*/
 html {
@@ -26,7 +33,7 @@ html {
 }
 
 body {
-  color: #353535;
+  color: #333333;
   margin: 0;
   padding: 0;
   font-family: "Raleway", sans-serif;
@@ -77,7 +84,7 @@ h3 {
 }
 
 .divider > section {
-  border-bottom: 2px dotted #373f51;
+  border-bottom: 2px dotted #333333;
   padding: 25px 0;
 }
 
@@ -93,23 +100,25 @@ h3 {
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-  border: 2px solid white;
+  border: 2px solid #EDF2F4;
   display: flex;
-  background: #353535;
-  color: white;
+  background: #333333;
+  color: #EDF2F4;
 }
 
-/* Navigation Styles */
+
+/* Navigation Styles 
+----------------------------------*/
 
 .topnav {
-  background-color: #333;
+  background-color: #333333;
   overflow: hidden;
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #EDF2F4;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -140,11 +149,19 @@ h3 {
   padding-top: 60px;
 }
 
+/* Header
+----------------------------------*/
+
+header {
+  background-color: #333333;
+  color: #EDF2F4;
+}
+
 /* About Me
 ----------------------------------*/
 .about-me {
-  background: #284b63;
-  color: #d8dbe2;
+  background: #EF233C;
+  color: #EDF2F4;
 }
 
 .about-me img {
@@ -155,7 +172,7 @@ h3 {
 ----------------------------------*/
 .work-experience {
   /* background: #d8dbe2; */
-  background: #acacac;
+  background: #EDF2F4;
 }
 
 .work-experience h2 ~ p {
@@ -163,7 +180,7 @@ h3 {
 }
 
 .work-experience a {
-  color: white;
+  color: #8D99AE;
   text-decoration: none;
 }
 
@@ -178,6 +195,8 @@ h3 {
 
 .skills {
   text-align: center;
+  background-color: #EF233C;
+  color: #EDF2F4;
 }
 
 .skills ul {
@@ -192,14 +211,14 @@ h3 {
 /* Education
 ----------------------------------*/
 .education {
-  background: #acacac;
+  background: #EDF2F4;
 }
 
 /* Contact Info
 ----------------------------------*/
 footer {
-  background: #353535;
-  color: #d8dbe2;
+  background: #333333;
+  color: #EDF2F4;
 }
 
 footer h2 {
