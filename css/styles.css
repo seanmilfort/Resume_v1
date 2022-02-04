@@ -25,6 +25,7 @@ https://coolors.co/palette/333333-2b2d42-8d99ae-edf2f4-ef233c-d90429 ***USING TH
 ----------------------------------*/
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *,
 *:before,
@@ -104,6 +105,13 @@ h3 {
   display: flex;
   background: #333333;
   color: #EDF2F4;
+}
+
+.main-section {
+  min-height: 100vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
 
