@@ -7,14 +7,11 @@ function responsiveNavbar() {
     }
   }
 
-  
   window.onscroll = function() {stickyNavbar()};
-
 
   function stickyNavbar() {
 
     var navbar = document.getElementById("myTopnav");
-
     var sticky = navbar.offsetTop;
 
     if (window.pageYOffset >= sticky) {
@@ -22,4 +19,5 @@ function responsiveNavbar() {
     } else {
       navbar.classList.remove("sticky");
     }
-  }
+    
+  };
