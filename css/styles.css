@@ -1,18 +1,4 @@
 /*
-COLOR PALETTE
-https://coolors.co/353535-3c6e71-ffffff-ACACAC-284b63
-#2D3142 - Space Gadet (Dark Grey)
-#BFC0C0 - Silver
-#F7FFF7 - Almost White
-#EF8354 - Mandarin (Orange)
-#4F5D75 - Independence (Light Grayish Blue)
-
-https://coolors.co/2b2d42-8d99ae-edf2f4-ef233c-d90429
-#2B2D42 - Warm Grey 90%
-#8D99AE - Warm Grey 70%
-#BDD5EA - Powder Blue
-#EF233C - Permanent Red
-#D90429 - Crimson Red
 
 https://coolors.co/palette/333333-2b2d42-8d99ae-edf2f4-ef233c-d90429 ***USING THIS ONE***
 #333333 - Jet
@@ -27,6 +13,7 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
 *,
 *:before,
 *:after {
@@ -39,6 +26,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Raleway", sans-serif;
+
+  overflow-x: hidden;
 }
 
 img {
@@ -46,19 +35,17 @@ img {
   align-content: center;
 }
 
-/* a {
-    color: #58A4B0;
-} */
-
 a:hover {
   text-decoration: none;
 }
+
 .content-wrap {
   max-width: 800px;
   width: 85%;
   margin: 0 auto;
   padding: 60px 0;
 }
+
 h1 {
   font-size: 100px;
 }
@@ -108,7 +95,7 @@ h3 {
 }
 
 .main-section, footer {
-  min-height: 100vh;
+  min-height: 50vh;
   justify-content: center;
   display: flex;
   align-items: center;
@@ -118,50 +105,34 @@ h3 {
 /* Navigation Styles 
 ----------------------------------*/
 
-.topnav {
-  background-color: #333333;
-  overflow: hidden;
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
 }
 
-.topnav a {
-  float: left;
-  display: block;
+header img {
+  width: 50px;
+  margin: 2rem;
+}
+
+.primary-header {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.primary-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.primary-navigation a {
   color: #EDF2F4;
-  text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
 }
 
-.topnav a:hover {
-  background-color: #EDF2F4;
-  color: black;
-}
-
-.topnav a.current {
-  border-bottom: 5px solid #EDF2F4;
-}
-
-.topnav .icon {
+.mobile-nav-toggle {
   display: none;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-
-/* Header
-----------------------------------*/
-
-header {
-  background-color: #333333;
-  color: #EDF2F4;
 }
 
 /* About Me
@@ -232,7 +203,7 @@ footer h2 {
 /*Responsive
 ---------------------------------------*/
 @media screen and (min-width: 700px) {
-  header,
+  .home-section,
   footer {
     text-align: center;
   }
@@ -257,10 +228,24 @@ footer h2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .primary-navigation {
+    padding-block: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .primary-header {
+    background: hsl(218 17% 62% / 0.1);
+    backdrop-filter: blur(1rem);
+  }
+
 }
 
+
+
 @media screen and (max-width: 699px) {
-  header {
+  .home-section {
     text-align: center;
   }
 
@@ -272,29 +257,48 @@ footer h2 {
     font-size: 75px;
     line-height: 1;
   }
+
   h2 {
     font-size: 30px;
   }
 
-  .topnav a:not(:first-child) {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
+  .primary-navigation {
+    --gap: 2em;
+    
+    position: fixed;
+    z-index: 1000;
+    inset: 0 0 0 30%;
+
+    flex-direction: column;
+    padding: min(30vh, 10rem) 2rem;
+
+    transform: translateX(100%);
+    transition: transform 350ms ease-out;
+
+    background: hsl(218 17% 62% / 0.1);
+    backdrop-filter: blur(1rem);
   }
 
-  .topnav.responsive {
-    position: relative;
+  .primary-navigation[data-visible="true"] {
+    transform: translateX(0%);
   }
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
+
+  .mobile-nav-toggle {
     display: block;
-    text-align: left;
+    position: absolute;
+    z-index: 9999;
+    background-color: transparent;
+    background-image: url('/images/menu_icon.svg');
+    background-repeat: no-repeat;
+    width: 2rem;
+    border:0;
+    aspect-ratio: 1;
+    top:2 rem;
+    right: 2rem;
   }
+
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background-image: url('/images/menu_icon_close.svg');
+  }
+
 }
