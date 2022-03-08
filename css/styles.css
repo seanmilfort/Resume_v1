@@ -112,7 +112,9 @@ h3 {
 
 header img {
   width: 50px;
-  margin: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .primary-header {
