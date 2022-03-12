@@ -269,7 +269,7 @@ footer h2 {
     
     position: fixed;
     z-index: 1000;
-    inset: 0 0 0 30%;
+    inset: 0 0 0 60%;
 
     flex-direction: column;
     padding: min(30vh, 10rem) 2rem;
@@ -277,8 +277,14 @@ footer h2 {
     transform: translateX(100%);
     transition: transform 350ms ease-out;
 
-    background: hsl(218 17% 62% / 0.1);
-    backdrop-filter: blur(1rem);
+    background-color: #EDF2F4;
+
+    /* background: hsl(218 17% 62% / 0.1);
+    backdrop-filter: blur(1rem); */
+  }
+
+  .primary-navigation a {
+    color: #333333;
   }
 
   .primary-navigation[data-visible="true"] {
@@ -300,7 +306,7 @@ footer h2 {
   }
 
   .mobile-nav-toggle[aria-expanded="true"] {
-    background-image: url('/images/menu_icon_close.svg');
+    background-image: url('/images/menu_icon_close_dark.svg');
   }
 
 }
