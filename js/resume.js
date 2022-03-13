@@ -26,6 +26,10 @@ primaryNav.addEventListener("click", () => {
   }
 });
 
+window.addEventListener("scroll", function() {
+  primaryHeader.classList.toggle("sticky", window.scrollY > 0);
+});
+
 // function responsiveNavbar() {
 //     var x = document.getElementById("myTopnav");
 //     if (x.className === "topnav") {
@@ -35,20 +39,20 @@ primaryNav.addEventListener("click", () => {
 //     }
 //   }
 
-  window.onscroll = function() {stickyNavbar()};
+  // window.onscroll = function() {stickyNavbar()};
 
-  function stickyNavbar() {
+  // function stickyNavbar() {
 
-    var navbar = document.getElementById("myTopnav");
-    var sticky = primaryHeader.offsetTop;
+  //   var navbar = document.getElementById("myTopnav");
+  //   var sticky = primaryHeader.offsetTop;
 
-    if (window.pageYOffset >= sticky) {
-      primaryHeader.classList.add("sticky")
-    } else {
-      primaryHeader.classList.remove("sticky");
-    }
+  //   if (window.pageYOffset >= sticky) {
+  //     primaryHeader.classList.add("sticky")
+  //   } else {
+  //     primaryHeader.classList.remove("sticky");
+  //   }
     
-  };
+  // };
 
 
 
