@@ -11,7 +11,11 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <script src="js/resume.js" defer></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
   </head>
   <body>
@@ -51,7 +55,7 @@
     <main>
       <!-- ***********************  HEADING  *********************** -->
       <section id="home-section" class="main-section home-section">
-        <div id="home" class="content-wrap">
+        <div data-aos="fade-in" id="home" class="content-wrap">
 
           <img src="images/SM_logo_dark.png" />
           <h2>System Adminstrator/Front-End Developer</h2>
@@ -63,10 +67,10 @@
       <section id="aboutme" class="main-section about-me">
         <div class="content-wrap">
           
-          <h2>About Me</h2>
+          <h2 data-aos="fade-up">About Me</h2>
 
           <section class="about-details">
-            <div>
+            <div data-aos="fade-right">
             
               <p>Hi, I’m Sean Milfort!</p>
               <p>I am currently a System Administrator II at Rite Aid! I have a passion for looking at new technology and continuing to better myself, specifically in the mobile field. I keep myself up to date with all of the different operating systems (Windows, macOS, Linux, Android) and the newest technology trends.</p>            
@@ -74,7 +78,7 @@
               <p>My current position in my organization allows me to test and utilize new technology to improve our work environment. With this position, I am looking at inefficient processes and problems that are currently implemented. Once identified, we look at re-mediating and improving them with new technology. Because of this, I have been able to think outside the box to find different solutions.</p>
 
             </div>
-            <div class="personal-info">
+            <div data-aos="fade-left" class="personal-info">
 
               <img src="images/seanmilfort_profile.jpg" alt="Picture of Sean Milfort" />
 
@@ -87,18 +91,18 @@
       <!-- ***********************  WORK EXPERIENCE  *********************** -->
       <section id="workexperience" class="main-section work-experience">
         <div class="content-wrap item-details divider">
-          
-          <h2>Work Experience</h2>
-          <p> My complete work history is available at my <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/seanmilfort">LinkedIn</a> or feel free to <a href="files/Sean_Milfort_Resume.pdf">download my resume</a>.</p>
-          
+          <div data-aos="fade-up">
+            <h2 >Work Experience</h2>
+            <p> My complete work history is available at my <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/seanmilfort">LinkedIn</a> or feel free to <a href="files/Sean_Milfort_Resume.pdf">download my resume</a>.</p>
+          </div>
 
           <section class ="job-item">            
-            <div class ="job-details">
+            <div data-aos="fade-right" class ="job-details">
               
               <img src="images/RiteAidLogo.png" alt='Rite Aidi Logo' />
             
             </div>
-            <div class="job-summary">
+            <div data-aos="fade-left" class="job-summary">
               
               <h3>Rite Aid <i>(September 2021 - Present)</i></h3>
               <p>System Administrator II (September 2021 - Present)</p>
@@ -112,12 +116,12 @@
           </section>
 
           <section class ="job-item">            
-            <div class ="job-details">
+            <div data-aos="fade-right" class ="job-details">
               
               <img src="images/WellSpanHealthLogo.png" alt='WellSpan Health Logo' />
             
             </div>
-            <div class="job-summary">
+            <div data-aos="fade-left" class="job-summary">
               
               <h3>WellSpan Health <i>(Dec 2019 - September 2021)</i></h3>
               <p>Systems Administrator (Dec 2019 - September 2021)</p>
@@ -135,10 +139,10 @@
 
           <!-- Copy this whole <section> block to add more jobs. -->
           <section class ="job-item">    
-            <div class ="job-details">
-              <img src="images/BurlingtonStoresLogo.png" alt="Burlington Stores Logo" />
+            <div data-aos="fade-right" class ="job-details">
+              <img  src="images/BurlingtonStoresLogo.png" alt="Burlington Stores Logo" />
             </div>
-            <div class="job-summary">
+            <div data-aos="fade-left" class="job-summary">
               
               <h3>Burlington Stores, Inc. (Apr 2015 - Nov 2019)</h3>
               <p>Integration Analyst II (Nov 2017 - Nov 2019)</p>
@@ -162,10 +166,10 @@
       <!-- ******************  SKILLS ****************** -->
       <section id="skills" class="main-section skills">
         <div class="content-wrap">
-          <h2>Skills</h2>
+          <h2 data-aos="fade-up">Skills</h2>
 
           <section class="skill-item">
-            <div class="skill-details">
+            <div data-aos="fade-right" class="skill-details">
               
               <h3>Languages</h3>
 
@@ -177,7 +181,7 @@
               </ul> 
 
             </div>
-            <div class="skill-details">
+            <div data-aos="fade-up" class="skill-details">
               
               <h3>Infrastructure</h3>
 
@@ -191,7 +195,7 @@
               </ul> 
 
             </div>
-            <div class="skill-details">
+            <div data-aos="fade-left" class="skill-details">
               <h3>Interpersonal</h3>
 
               <ul>
@@ -212,14 +216,14 @@
       <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
       <section id="education" class="main-section education">
         <div class="content-wrap">
-          <h2>Education</h2>
+          <h2 data-aos="fade-up">Education</h2>
 
           <!-- Copy this whole <section> block to add more schools. -->
           <section class="education-item">
             <div class="education-details">
-              <img src="images/LaSalleUniversityWhiteLogo.png" alt="La Salle University Logo"/>
+              <img data-aos="fade-right" src="images/LaSalleUniversityWhiteLogo.png" alt="La Salle University Logo"/>
             </div>
-            <div class="education-summary">
+            <div data-aos="fade-left" class="education-summary">
               <p>Masters of Science (M.S.), Computer and Information Science, <i>***Estimated Graduation Date May 2022***</i></p>
               <p>Bachelor of Arts (B.A.), Computer Science, <i>May 2015</i></p>
             </div>
@@ -231,7 +235,7 @@
       <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
       <footer>
         <section id="contactme" class="main-section">
-          <div class="content-wrap">
+          <div data-aos="fade-up" class="content-wrap">
             <h2>Let's Keep in Touch!</h2>
             <ul class="contact-list">
               <li><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/seanmilfort" ><i class="fa fa-brands fa-twitter"></i></a></li>

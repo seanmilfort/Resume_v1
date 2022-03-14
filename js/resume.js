@@ -30,6 +30,13 @@ window.addEventListener("scroll", function() {
   primaryHeader.classList.toggle("sticky", window.scrollY > 0);
 });
 
+AOS.init({
+
+  offset: 275,
+  duration: 1000
+
+});
+
 // function responsiveNavbar() {
 //     var x = document.getElementById("myTopnav");
 //     if (x.className === "topnav") {
