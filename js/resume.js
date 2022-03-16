@@ -37,6 +37,12 @@ AOS.init({
 
 });
 
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-MXT0BFH7KE');
+
 // function responsiveNavbar() {
 //     var x = document.getElementById("myTopnav");
 //     if (x.className === "topnav") {
