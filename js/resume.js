@@ -42,30 +42,3 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-MXT0BFH7KE');
-
-// function responsiveNavbar() {
-//     var x = document.getElementById("myTopnav");
-//     if (x.className === "topnav") {
-//       x.className += " responsive";
-//     } else {
-//       x.className = "topnav";
-//     }
-//   }
-
-  // window.onscroll = function() {stickyNavbar()};
-
-  // function stickyNavbar() {
-
-  //   var navbar = document.getElementById("myTopnav");
-  //   var sticky = primaryHeader.offsetTop;
-
-  //   if (window.pageYOffset >= sticky) {
-  //     primaryHeader.classList.add("sticky")
-  //   } else {
-  //     primaryHeader.classList.remove("sticky");
-  //   }
-    
-  // };
-
-
-
