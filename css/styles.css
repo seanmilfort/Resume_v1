@@ -344,6 +344,11 @@ footer h2 {
     padding-bottom: 30px;
   }
 
+  .fa, .fa-blog {
+    font-size: 15px;
+    padding: 10px 10px;
+  }
+
 }
 
 /*Animations
