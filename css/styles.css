@@ -101,10 +101,8 @@ h3 {
   align-items: center;
 }
 
-
 /* Navigation Styles 
 ----------------------------------*/
-
 .flex {
   display: flex;
   gap: var(--gap, 1rem);
@@ -151,7 +149,6 @@ header img {
 
 /* Home Section
 ----------------------------------*/
-
 .home-section {
   position: relative;
 }
@@ -167,8 +164,6 @@ header img {
 
 /* About Me
 ----------------------------------*/
-
-
 .about-me img {
   align-content: center;
 }
@@ -308,9 +303,6 @@ footer h2 {
     transition: transform 350ms ease-out;
 
     background-color: #EDF2F4;
-
-    /* background: hsl(218 17% 62% / 0.1);
-    backdrop-filter: blur(1rem); */
   }
 
   .primary-navigation a {

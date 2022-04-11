@@ -6,6 +6,7 @@
     
     <title>Sean Milfort</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -21,35 +22,37 @@
   <body>
     <header class="primary-header flex" id="primary-header">
       <div>
-
-        <img alt="Logo" src="images/SM_Logo_Only_Dark.png">
-
+        <picture>
+          <source type="image/webp" srcset="/images/SM_Logo_Only_Dark.webp">
+          <source type="image/jpg" srcset="/images/SM_Logo_Only_Dark.png">
+          <img src="/images/SM_Logo_Only_Dark.png" alt="Logo">
+        </picture>
       </div>
 
       <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
 
-    <nav>
-      <ul class="primary-navigation flex" id="primary-navigation" data-visible="false">
-        <li>
-          <a href="#home-section">Home</a>
-        </li>
-        <li>
-          <a href="#aboutme">About Me</a>
-        </li>
-        <li>
-          <a href="#workexperience">Work Exprience</a>
-        </li>
-        <li>
-          <a href="#skills">Skills</a>
-        </li>
-        <li>
-          <a href="#education">Education</a>
-        </li>
-        <li>
-          <a href="#contactme">Contact Me</a>
-        </li>
-      </ul>
-    </nav>
+      <nav>
+        <ul class="primary-navigation flex" id="primary-navigation" data-visible="false">
+          <li>
+            <a href="#home-section">Home</a>
+          </li>
+          <li>
+            <a href="#aboutme">About Me</a>
+          </li>
+          <li>
+            <a href="#workexperience">Work Exprience</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#education">Education</a>
+          </li>
+          <li>
+            <a href="#contactme">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
     
     </header>
     <main>
@@ -57,7 +60,11 @@
       <section id="home-section" class="main-section home-section">
         <div data-aos="fade-in" id="home" class="content-wrap">
 
-          <img alt="Peronsal Brand Header Logo" src="images/SM_logo_dark.png" />
+          <picture>
+            <source type="image/webp" srcset="images/SM_logo_dark.webp">
+            <source type="image/jpg" srcset="images/SM_logo_dark.png">
+            <img src="images/SM_logo_dark.png" alt="Peronsal Brand Header Logo">
+          </picture>
           <h2>System Administrator/Front-End Developer</h2>
 
         </div>
@@ -80,7 +87,11 @@
             </div>
             <div data-aos="fade-left" class="personal-info">
 
-              <img src="images/seanmilfort_profile.jpg" alt="Picture of Sean Milfort" />
+              <picture>
+                <source type="image/webp" srcset="images/seanmilfort_profile.webp">
+                <source type="image/jpg" srcset="images/seanmilfort_profile.jpg">
+                <img src="images/seanmilfort_profile.jpg" alt="Picture of Sean Milfort">
+              </picture>
 
             </div>
           </section>
@@ -96,10 +107,15 @@
             <p> My complete work history is available at my <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/seanmilfort">LinkedIn</a> or feel free to <a href="files/Sean_Milfort_Resume.pdf">download my resume</a>.</p>
           </div>
 
+          <!-- Copy this whole <section> block to add more jobs. -->
           <section class ="job-item">            
             <div data-aos="fade-right" class ="job-details">
               
-              <img src="images/RiteAidLogo.png" alt="Rite Aid Logo" />
+              <picture>
+                <source type="image/webp" srcset="images/RiteAidLogo.webp">
+                <source type="image/jpg" srcset="images/RiteAidLogo.png">
+                <img src="images/RiteAidLogo.png" alt="Rite Aid Logo">
+              </picture>
             
             </div>
             <div data-aos="fade-left" class="job-summary">
@@ -113,12 +129,17 @@
               </ul>
                 
             </div>
+          <!-- End of Job block. -->
           </section>
 
           <section class ="job-item">            
             <div data-aos="fade-right" class ="job-details">
               
-              <img src="images/WellSpanHealthLogo.png" alt="WellSpan Health Logo" />
+              <picture>
+                <source type="image/webp" srcset="images/WellSpanHealthLogo.webp">
+                <source type="image/jpg" srcset="images/WellSpanHealthLogo.png">
+                <img src="images/WellSpanHealthLogo.png" alt="WellSpan Health Logo">
+              </picture>
             
             </div>
             <div data-aos="fade-left" class="job-summary">
@@ -137,10 +158,13 @@
             </div>
           </section>
 
-          <!-- Copy this whole <section> block to add more jobs. -->
           <section class ="job-item">    
             <div data-aos="fade-right" class ="job-details">
-              <img  src="images/BurlingtonStoresLogo.png" alt="Burlington Stores Logo" />
+              <picture>
+                <source type="image/webp" srcset="images/BurlingtonStoresLogo.webp">
+                <source type="image/jpg" srcset="images/BurlingtonStoresLogo.png">
+                <img src="images/BurlingtonStoresLogo.png" alt="Burlington Stores Logo">
+              </picture>
             </div>
             <div data-aos="fade-left" class="job-summary">
               
@@ -157,8 +181,7 @@
               
             </div>
           </section>
-          
-          <!-- End of Job block. -->
+    
         </div>
       </section>
 
@@ -220,8 +243,12 @@
 
           <!-- Copy this whole <section> block to add more schools. -->
           <section class="education-item">
-            <div class="education-details">
-              <img data-aos="fade-right" src="images/LaSalleUniversityWhiteLogo.png" alt="La Salle University Logo"/>
+            <div data-aos="fade-right" class="education-details">
+              <picture>
+                <source type="image/webp" srcset="images/LaSalleUniversityWhiteLogo.webp">
+                <source type="image/jpg" srcset="images/LaSalleUniversityWhiteLogo.png">
+                <img src="images/LaSalleUniversityWhiteLogo.png" alt="La Salle University Logo">
+              </picture>
             </div>
             <div data-aos="fade-left" class="education-summary">
               <p>Masters of Science (M.S.), Computer and Information Science, <i>***Estimated Graduation Date May 2022***</i></p>
